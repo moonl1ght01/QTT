@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+
+    </title>
+    <meta name="author" content="Daniele Colucci AKA moonl1ght01">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', path='/css/bulma/css/bulma.css') }}" rel="stylesheet">
+
+  </head>
+      <body>
+        <div class="columns ">
+          
+        <aside class="menu is-one-quarter p-5 background sticky">
+          <figure class="image is-128x228" href="{{ url_for('index')}}">
+            <img src="{{ url_for('static', path='/img/GroupLogo_full.svg') }}" >
+          </figure>
+          <div class="is-divider"></div>
+          <p class="menu-label white">General</p>
+          <ul class="menu-list ">
+            <li><a>Dashboard</a></li>
+          </ul>
+<br />
+          <ul class="menu-list is-fullheight">
+            <li><a>Payments</a></li>
+            <li><a>Transfers</a></li>
+            <li><a>Balance</a></li>
+          </ul>
+        </aside>
+
+        <div class="column is-three-quarters">
+          <div class="tabs is-centered">
+            <ul>
+              <li class="is-active"><a>Pictures</a></li>
+              <li><a>Music</a></li>
+              <li><a>Videos</a></li>
+              <li><a>Documents</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        </div>
+    </body>
+</html>
